@@ -30,7 +30,8 @@ class Transfer
   end
   
   def reverse_transfer
-    
+    @sender.deposit(@amount)
+    @receiver.withdraw(@amount)
   end
   
 end
